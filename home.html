@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/task.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.min.css">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo</title>
+   <script src="https://cdn.jsdelivr.net/npm/firebase@6.1.0/firebase.js"></script>
+    
+    
+</head>
+
+<body>
+    
+<div class = "bg">
+    <center>
+        <div class = "wrapper">
+            <div class = "message" style = "text-align: center;">
+          
+     <img  id= "photo" src = "img/sakal.png">
+
+        <h1>Howdy!</h1>
+        <p id ="msg">Thanks so much for getting here. I'm Pratyush, creater and maintainer of ToDo. I'd really love to  get in touch with you to hear your feedback or just say hello!😃 
+        </p>
+       
+        <p style = "font-size: 18px">REACH ME ON </p>
+            
+
+        <a href = "instagram.com" id="sp">
+            <i class ="fab fa-instagram"></i>
+        </a>
+         <a href = "twitter.com">
+            <i class ="fab fa-twitter"></i>
+        </a>
+         <a href = "devpratyush.com">
+            <i class="fa fa-globe"></i>  
+        </a>
+    </div>
+        </div>
+    </center>
+</div>
+    <div class = "hd">
+        <h3 style=" padding-top: 2vh" class = "op"><span id = "ppp">Hello</span> Pratyush!</h3>
+        <p id = "dat">31 Dec, 2020</p>
+        <div class = "pp">
+            <img class = "iemg" src = "img/sakal.png">
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class = "cate">
+     <h2 style ="margin-left: 5%; margin-top: 1vh; position: fixed;"><span class="udi">Categories</span></h2>
+        <br><br>
+        <div class = "categories">
+                   
+
+        </div>
+    </div>
+    
+    
+    <button class= "add1" onclick="closeOpt()">×</button>
+    <button class= "add" onclick="openOpt()">+</button>
+    <div class = "opt">
+        
+    <button class= "addT" onclick="openPage()"><i class="fa fa-list" id ="icns" aria-hidden="true"></i> Add Task</button>
+        <br>
+    <button class= "addC" onclick="openPage()"><i class="fa fa-list-alt" id ="icns" aria-hidden="true"></i> Add Category</button>
+    </div>
+    
+    <div class ="iam" id ="cpt">
+        
+<!--       Heading-->
+         <div class ="heading">
+        <h2 class="ud" style ="margin-left: 0%; margin-top: -2vh; position: fixed;"><span >Tod</span>ay's Tasks</h2>
+        </div>
+        <br><br><br>
+<!--       Heading-->
+        
+<!--
+        <div class="task">Clean The Room</div>
+        <div class="task">Clean The Room</div>
+-->
+
+        
+<!--     Messages Part starts Here-->
+ <h3 class="non" id = "preloade"><i style ="font-size: 40px" class="fas fa-circle-notch fa-spin"></i> </h3>
+        
+        <h3 class = "pop" id="noT">
+         No tasks available 😄
+        </h3>
+        <div class="dis" id = "offl">
+            <div class="bbg">
+                <h3 style ="padding-top: 5vh;"><i style = "font-size: 40px;" class="fa fa-signal"></i><br><br>It seems that you don't have an active internet connection!😔</h3>
+                
+            </div>
+        </div>
+<!--     Messages Part Ends Here-->
+
+
+    </div>
+    
+    <div class = "page">
+        <input type = "text" class=  "op" id = "cnt" placeholder="Enter Your Task" maxlength="26">
+        
+        <textarea class=  "op1" id = "cnt1" placeholder="Description"></textarea>
+    <button class = "send" onclick = "addTask()">  
+        Add Task <i class="fa fa-angle-up"></i></button>
+        
+         <div class="idk">
+            <input type = "number" class=  "dt" id = "sit" placeholder="Date" maxlength="2">
+       <p id = "mady">January 202w1</p>
+
+        </div>
+    </div>
+<!--    <br>-->
+   
+        
+</body>
+</html>
+
+<script>
+ 
+    
+</script>
+
+<!--
+<script> 
+        function isOnline() { 
+            if (navigator.onLine) { 
+
+                document.getElementById( 
+                  "offl").style = "display: none";
+                
+            } else { 
+                
+                document.getElementById( 
+                  "offl").style = "display: block"; 
+                document.getElementById( 
+                  "preloade").style = "display: none";
+            } 
+        } 
+    </script> 
+-->
+
+        
+
+
